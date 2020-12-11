@@ -3,10 +3,6 @@ This repository is built upon the [code](https://github.com/hengyuan-hu/bottom-u
 
 Almost all flags can be set by yourself at `utils/config.py`!
 
-## Repo-download
-```
-git clone https://github.com/guoyang9/class-imbalance-VQA.git
-```
 ## Prerequisites
     * python==3.7.7
     * nltk==3.4
