@@ -46,3 +46,12 @@ python main.py --name test-VQA --gpu 0
 python main.py --name test-VQA --eval-only
 ```
 ## Citation
+If you want to use this code, please cite our paper as follows:
+```
+@Inproceedings{adaVQA,
+  author    = {Yangyang Guo, Liqiang Nie, Zhiyong Cheng, Feng Ji, Ji Zhang, Alberto Del Bimbo},
+  title     = {AdaVQA: Overcoming Language Priors with Adapted Margin Loss},
+  booktitle = {IJCAI},
+  year      = {2021},
+}
+```
