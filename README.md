@@ -40,4 +40,12 @@ python main.py --test --name=somename --gpu=0
 ```
 
 ## Citation
-If you plan to use this code as part of your published research, we'd appreciate it if you could cite our paper: waiting for update...
+If you plan to use this code as part of your published research, we'd appreciate it if you could cite our paper:
+```
+@Inproceedings{adaVQA,
+  author    = {Yangyang Guo, Liqiang Nie, Zhiyong Cheng, Feng Ji, Ji Zhang, Alberto Del Bimbo},
+  title     = {AdaVQA: Overcoming Language Priors with Adapted Margin Loss},
+  booktitle = {IJCAI},
+  year      = {2021},
+}
+```
