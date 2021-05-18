@@ -1,4 +1,4 @@
-# AdaVQA: Overcoming Language Priors with Adapted Margin Loss
+# AdaVQA: Overcoming Language Priors with Adapted Margin Cosine Loss
 This repository is built upon the [code](https://github.com/hengyuan-hu/bottom-up-attention-vqa). Futher introduction will be given shortly.
 
 Almost all flags can be set by yourself at `utils/config.py`!
@@ -50,7 +50,7 @@ If you want to use this code, please cite our paper as follows:
 ```
 @Inproceedings{adaVQA,
   author    = {Yangyang Guo, Liqiang Nie, Zhiyong Cheng, Feng Ji, Ji Zhang, Alberto Del Bimbo},
-  title     = {AdaVQA: Overcoming Language Priors with Adapted Margin Loss},
+  title     = {AdaVQA: Overcoming Language Priors with Adapted Margin Cosine Loss},
   booktitle = {IJCAI},
   year      = {2021},
 }
