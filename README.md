@@ -1,4 +1,4 @@
-# AdaVQA: Overcoming Language Priors with Adapted Margin Loss
+# AdaVQA: Overcoming Language Priors with Adapted Margin Cosine Loss
 This repository is built upon the [code](https://github.com/Cyanogenoid/vqa-counting.git) provided by @Yan Zhang. Futher introduction will be given shortly.
 ## Prerequisites
 	* python==3.7.7
@@ -44,7 +44,7 @@ If you plan to use this code as part of your published research, we'd appreciate
 ```
 @Inproceedings{adaVQA,
   author    = {Yangyang Guo, Liqiang Nie, Zhiyong Cheng, Feng Ji, Ji Zhang, Alberto Del Bimbo},
-  title     = {AdaVQA: Overcoming Language Priors with Adapted Margin Loss},
+  title     = {AdaVQA: Overcoming Language Priors with Adapted Margin Cosine Loss},
   booktitle = {IJCAI},
   year      = {2021},
 }
