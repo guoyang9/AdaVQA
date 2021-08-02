@@ -1,5 +1,5 @@
 # AdaVQA: Overcoming Language Priors with Adapted Margin Cosine Loss
-This repository is built upon the [code](https://github.com/hengyuan-hu/bottom-up-attention-vqa). Futher introduction will be given shortly.
+This repository is built upon the [code](https://github.com/hengyuan-hu/bottom-up-attention-vqa). 
 
 Almost all flags can be set by yourself at `utils/config.py`!
 
