@@ -93,7 +93,7 @@ def _load_dataset(cache_path, name, img_id2val):
     questions = sorted(questions, key=lambda x: x['question_id'])
     if test: # will be ignored anyway
         answers = [
-            {'image_id': 0, 'question_id': 0,
+            {'image_id': 0, 'question_id': 0, 'question_type': '',
             'labels': [], 'scores': []} 
             for _ in range(len(questions))]
     else:
