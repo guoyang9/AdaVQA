@@ -1,18 +1,22 @@
 # AdaVQA: Overcoming Language Priors with Adapted Margin Cosine Loss
-This repository is built upon the [code](https://github.com/hengyuan-hu/bottom-up-attention-vqa). 
+Official implementation for the IJCAI'21 paper. 
 
-Almost all flags can be set by yourself at `utils/config.py`!
+This repository is built upon the [code](https://github.com/hengyuan-hu/bottom-up-attention-vqa). Thanks for the code sharing of the authors.
 
-## Prerequisites
-    * python==3.7.7
-    * nltk==3.4
-    * bcolz==1.2.1
-    * tqdm==4.31.1
-    * numpy==1.18.4
-    * pytorch==1.4.0
-    * tensorboardX==2.1
-    * torchvision==0.6.0
-## Dataset
+Almost all flags can be set by yourself at [utils/config.py](utils/config.py)! We have another extension paper with the LXMERT as baseline achieves SOTA results of `71.44` on the VQA-CP v2 dataset. You can easily combine this [loss](utils/losses.py) with our [LXMERT](https://github.com/guoyang9/LXMERT-VQACP) implementation.
+
+|              | Y/N   | Num.  | Other | All   |
+|--------------|-------|-------|-------|-------|
+| AdaVQA(UpDn) | 72.47 | 53.81 | 45.58 | 54.67 |
+| MMDB(LXMERT) | 91.37 | 65.55 | 62.61 | 71.44 |
+|              |       |       |       |       |
+
+### Prerequisites
+* python==3.7.7
+* pytorch==1.4.0
+* tensorboardX==2.1
+* torchvision==0.6.0
+### Dataset
 First of all, make all the data in the right position according to the `utils/config.py`!
 
 * Please download the VQA-CP datasets in the original paper.
@@ -20,38 +24,48 @@ First of all, make all the data in the right position according to the `utils/co
 * The pre-trained Glove features can be accessed via [GLOVE](https://nlp.stanford.edu/projects/glove/).
 
 
-## Pre-processing
-
+### Pre-processing
 1. process questions and dump dictionary:
-    ```
+    ``` python
     python tools/create_dictionary.py
     ```
-
 2. process answers and question types:
 
-    ```
+    ``` python
     python tools/compute_softscore.py
-    ```
+    ``` 
 3. convert image features to h5:
-    ```
+    ``` python
     python tools/detection_features_converter.py 
     ```
-## Model Training
-```
+### Model Training
+``` python
 python main.py --name test-VQA --gpu 0
 ```
 
-## Model Evaluation 
-```
+### Model Evaluation 
+``` python
 python main.py --name test-VQA --eval-only
-```
-## Citation
-If you want to use this code, please cite our paper as follows:
-```
+``` 
+### Citation
+If you want to use this code, please cite our papers as follows:
+``` python
 @Inproceedings{adaVQA,
   author    = {Yangyang Guo, Liqiang Nie, Zhiyong Cheng, Feng Ji, Ji Zhang, Alberto Del Bimbo},
   title     = {AdaVQA: Overcoming Language Priors with Adapted Margin Cosine Loss},
   booktitle = {IJCAI},
   year      = {2021},
+}
+@article{MMDB,
+  author    = {Yangyang Guo and
+               Liqiang Nie and
+               Harry Cheng and
+               Zhiyong Cheng and
+               Mohan S. Kankanhalli and
+               Alberto Del Bimbo},
+  title     = {On Modality Bias Recognition and Reduction},
+  journal   = {CoRR},
+  volume    = {abs/2202.12690},
+  year      = {2022},
 }
 ```
