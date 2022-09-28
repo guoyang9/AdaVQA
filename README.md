@@ -49,7 +49,7 @@ python main.py --name test-VQA --eval-only
 ``` 
 ### Citation
 If you want to use this code, please cite our papers as follows:
-``` python
+``` ruby
 @Inproceedings{adaVQA,
   author    = {Yangyang Guo, Liqiang Nie, Zhiyong Cheng, Feng Ji, Ji Zhang, Alberto Del Bimbo},
   title     = {AdaVQA: Overcoming Language Priors with Adapted Margin Cosine Loss},
@@ -64,8 +64,7 @@ If you want to use this code, please cite our papers as follows:
                Mohan S. Kankanhalli and
                Alberto Del Bimbo},
   title     = {On Modality Bias Recognition and Reduction},
-  journal   = {CoRR},
-  volume    = {abs/2202.12690},
+  journal   = {ACM ToMM},
   year      = {2022},
 }
 ```
